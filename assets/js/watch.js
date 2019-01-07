@@ -26,6 +26,7 @@ $(document).ready(function () {
         $(".film-information-area").hide();
     }
     shareFilmFacebook();
+    setUrlCommentFacebook(url);
 });
 
 $(".change-pixel").click(function () {
@@ -35,6 +36,10 @@ $(".change-pixel").click(function () {
 $("#toggleLight").click(function () {
     toggleLight();
 });
+
+function setUrlCommentFacebook(url){
+    $(".fb-comments").attr("data-href", "https://developers.facebook.com/docs/plugins/comments#" + url);
+}
 
 function playFilm(filmCode, serverRoot, currentTime) {
     $.ajax({
