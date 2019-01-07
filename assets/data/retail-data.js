@@ -36,7 +36,7 @@ arrayRetailFilms.push({
     year: '2018',
     time: '125',
     director: 'Witthaya Thongyooyong',
-    img: '.jpg',
+    img: 'onganhtroidanh.jpg',
     description: 'Ngay từ thời thơ ấu, cậu nhóc Chut luôn nghĩ là em bé trong bụng mẹ là em trai để có người chơi robot và đá bóng cùng mình. Tiếc là ông trời đã không lắng nghe nguyện vọng này khi để mẹ cậu hạ sinh một cô em gái "hở chút là mè nheo khóc lóc". ',
     insertDate: '',
     ggCode: '',
