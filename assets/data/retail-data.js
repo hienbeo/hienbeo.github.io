@@ -64,7 +64,7 @@ arrayRetailFilms.push({
     time: '101',
     year: '2018',
     director: 'Kan Ka Wai',
-    img: 'aquaman.jpg',
+    img: 'daisuhuynh.jpg',
     description: 'Một giáo viên trung học mỗi ngày đều đặn tới trường gõ đầu trẻ cho đến một hôm…cậu học sinh do anh chủ nhiệm dính vào rắc rối với một băng đảng xã hội đen và bị bắt cóc. Đó cũng là lúc bí mật của“anh” thầy trước giờ luôn hiền lành, hết mực yêu thương học sinh và có tâm với nghề bị bộc lộ. Có vẻ như quá khứ máu lửa không buông tha “anh” thầy mà buộc anh phải trở lại con người xưa nhưng có khác là lần này không phải chiến đấu cho bản thân anh, mà cho những đứa trẻ mà anh luôn xem chúng như những đứa em trai.',
     insertDate: '',
     ggCode: '',
