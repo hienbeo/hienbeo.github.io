@@ -18,6 +18,7 @@ $(document).ready(function () {
         $(".film-information-area img").attr("src", "assets/images/" + item[0].img);
         $(".film-title").html(item[0].name);
         $(".film-title-eng").html(item[0].eng);
+        $(".film-time").html(item[0].time + " phút");
         $(".film-director").html(item[0].director);
         $(".film-year").html(item[0].year);
         $(".film-desciption").html(item[0].description);
