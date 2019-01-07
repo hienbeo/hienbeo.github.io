@@ -4,7 +4,7 @@ $(document).ready(function () {
     let currentTime = url.searchParams.get("t");
     let serverRoot = "https://cors-anywhere.herokuapp.com/http://canbo.vinhuni.edu.vn";
     // let serverRoot = "http://localhost:2018";
-    // playFilm(code, serverRoot, currentTime);
+    playFilm(code, serverRoot, currentTime);
     // playFilmFake(code, serverRoot, currentTime);
     if (code !== "") {
         var item = arrayCartoonFilms
