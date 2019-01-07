@@ -436,15 +436,6 @@ input:active {
   height: 500px;
 }
 
-#media-player {
-  position: relative;
-  height: 100%;
-}
-
-#media-player:hover .video-control-area {
-  display: block;
-}
-
 .watch-area video {
   transform: scale(1) !important;
   top: 0 !important;
@@ -458,8 +449,17 @@ input:active {
   position: absolute;
 }
 
+#media-player {
+  position: relative;
+  height: 100%;
+}
 
-.video-control-area {
+#media-player:hover .media-control-area {
+  display: block;
+}
+
+
+.media-control-area {
   height: 35px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
@@ -473,62 +473,55 @@ input:active {
   display: none;
 }
 
-.video-control-area .control-button {
-  padding: 0 15px;
-  overflow: hidden;
-  /* padding: 0 15px; */
-  user-select: none;
-}
-
-.video-control-area .control-right {
-  float: right;
-}
-
-.video-control-area .control-left {
-  float: left;
-}
-
-
-.video-control-area .video-process-area {
+.media-control-area .process-area {
   top: 0;
   background-color: #2f3542;
   height: 5px;
 }
 
-.video-control-area .video-process-area .video-process-buffered {
+.media-control-area .process-area .process-buffered {
   background-color: #ced6e0;
-  ;
   height: 5px;
   width: 0%;
 }
 
-
-.video-control-area .video-process-area .video-process-realtime {
+.media-control-area .process-area .process-currenttime {
   background-color: #EA2027;
   height: 5px;
   margin-top: -5px;
   width: 0%;
 }
 
+.media-control-area .control-area {
+  padding: 0 15px;
+  overflow: hidden;
+  user-select: none;
+}
 
-.video-control-area .control-left button {
+.media-control-area .control-area .control-right {
+  float: right;
+  margin: 3px 0;
+}
+
+.media-control-area .control-area .control-left {
+  float: left;
+}
+
+.media-control-area .control-area .control-left button {
   font-size: 19px;
   padding: 0;
   margin-right: 15px;
 }
 
-.video-control-area .control-right {
-  margin: 3px 0;
-}
-
-.video-control-area .control-right button {
+.media-control-area .control-area .control-right button {
   padding: 2px 15px;
 }
 
-.video-control-area .control-left #videoTimer {
-  /* font-weight: bold; */
+.media-control-area .control-area .control-left .video-timer {
   color: #fff;
+  font-size: 14px;
 }
+
 .film-information-area {
   padding: 10px;
   font-size: 16px;
