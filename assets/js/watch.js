@@ -2,10 +2,10 @@ $(document).ready(function() {
   let url = new URL(location.href);
   let code = url.searchParams.get("code");
   let currentTime = url.searchParams.get("t") === null ? 0 : url.searchParams.get("t");
-  // let serverRoot = "https://cors-anywhere.herokuapp.com/http://canbo.vinhuni.edu.vn";
-  let serverRoot = "http://localhost:55418";
-  // playFilm(code, serverRoot, currentTime);
-  playFilmFake(code, serverRoot, currentTime);
+  let serverRoot = "https://cors-anywhere.herokuapp.com/http://canbo.vinhuni.edu.vn";
+  // let serverRoot = "http://localhost:2018";
+  playFilm(code, serverRoot, currentTime);
+  // playFilmFake(code, serverRoot, currentTime);
   if (code !== "") {
     var item = arrayCartoonFilms
       .concat(arrayRetailFilms)
