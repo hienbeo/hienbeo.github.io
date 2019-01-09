@@ -40,7 +40,7 @@ function setUrlCommentFacebook(url) {
 
 function playFilm(filmCode, serverRoot, currentTime) {
   $.ajax({
-    type: "POST",
+    type: "GET",
     url: serverRoot + "/api/phim-moi/" + filmCode,
     success: function(result) {
       $.each(JSON.parse(result).medias, function(i, item) {
