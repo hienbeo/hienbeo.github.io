@@ -24,7 +24,7 @@ function cartoonBinding(pageSize = 12, pageActive = 1) {
             '<a href="watch.html?code=' + arrayCartoonFilms[i].phimmoiCode + '">' +
             '<div class="item" data-toggle="tooltip" data-placement="right" title="' + arrayCartoonFilms[i].name + '">' +
             '<img src="assets/images/' + arrayCartoonFilms[i].img + '" />' +
-            '<hr />' +
+            '<br>' +
             '<div class="content-item">' +
             '<span>' + arrayCartoonFilms[i].name + '</span>' +
             '<br>' +
@@ -52,7 +52,7 @@ function retailBinding(pageSize = 12, pageActive = 1) {
             '<a href="watch.html?code=' + arrayRetailFilms[i].phimmoiCode + '">' +
             '<div class="item" data-toggle="tooltip" data-placement="right" title="' + arrayRetailFilms[i].name + '">' +
             '<img src="assets/images/' + arrayRetailFilms[i].img + '" />' +
-            '<hr />' +
+            '<br>' +
             '<div class="content-item">' +
             '<span>' + arrayRetailFilms[i].name + '</span>' +
             '<br>' +
@@ -80,7 +80,7 @@ function seriesBinding(pageSize = 12, pageActive = 1) {
             '<a href="watch.html?code=' + arraySeriesFilms[i].phimmoiCode + '">' +
             '<div class="item" data-toggle="tooltip" data-placement="right" title="' + arraySeriesFilms[i].name + '">' +
             '<img src="assets/images/' + arraySeriesFilms[i].img + '" />' +
-            '<hr />' +
+            '<br>' +
             '<div class="content-item">' +
             '<span>' + arraySeriesFilms[i].name + '</span>' +
             '<br>' +

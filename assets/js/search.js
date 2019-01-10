@@ -36,7 +36,7 @@ function searchLoading(searchString, pageActive, pageSize = 12) {
                 '<a href="watch.html?code=' + searchResult[i].phimmoiCode + '">' +
                 '<div class="item" data-toggle="tooltip" data-placement="right" title="' + searchResult[i].name + '">' +
                 '<img src="assets/images/' + searchResult[i].img + '" />' +
-                '<hr />' +
+                '<br>' +
                 '<div class="content-item">' +
                 '<span>' + searchResult[i].name + '</span>' +
                 '<br>' +
