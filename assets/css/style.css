@@ -176,18 +176,14 @@ a:hover {
   font-size: 18px;
   margin: 0 -5px;
   user-select: none;
-
-}
-
-.area-header span {
   background-image:  linear-gradient(90deg, #FD8FB3, #BF95EA, #5CB9FF);
-  padding: 2px 20px;
+  padding: 5px 20px;
 }
 
 .area-header a {
   float: right;
   font-size: 14px;
-  color: #BF95EA;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -257,7 +253,7 @@ a:hover {
 
 .page-area::before {
   font-weight: bold;
-  color: #ff6b81;
+  color: #BF95EA;
   content: "Trang:";
 }
 
