@@ -272,7 +272,8 @@ a:hover {
 }
 
 .right-menu .box {
-  margin: 10px 0;
+  /* margin: 10px 0; */
+  margin-bottom: 15px;
 }
 
 .right-menu .continue-watching {
@@ -596,7 +597,7 @@ input:active {
 
 
 .area {
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 .area .row {
