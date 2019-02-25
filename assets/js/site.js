@@ -13,7 +13,7 @@ function addListener() {
     buttonNext.addEventListener("click", nextAudio, false);
     buttonPrevious.addEventListener("click", previousAudio, false);
     audioTag.addEventListener('timeupdate', function () {
-        if (audio.ended) {
+        if (audioTag.ended) {
             nextAudio();
         }
     })
