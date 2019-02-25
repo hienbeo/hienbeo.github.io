@@ -5,6 +5,7 @@ let buttonPlayPause = document.querySelector('.button-play-pause');
 let buttonNext = document.querySelector('.button-next');
 let buttonPrevious = document.querySelector('.button-previous');
 let processBar = document.querySelector('.process-bar');
+let processBall = document.querySelector('.process-ball');
 let buttonList = document.querySelector('.button-list');
 let playerInformation = document.querySelector('.player-information');
 let playerControl = document.querySelector('.player-control');
@@ -21,6 +22,7 @@ function addListener() {
     buttonList.addEventListener("click", buttonListClick, false);
     audioTag.addEventListener('timeupdate', function () {
         processBar.style.width = (audioTag.currentTime / audioTag.duration) * 100 + "%";
+        processBall.style.left = (audioTag.currentTime / audioTag.duration) * 100 + "%";
         if (audioTag.ended) {
             nextAudio();
         }
@@ -30,13 +32,9 @@ function addListener() {
 function buttonListClick() {
     if (playerTada.style.bottom === '0' || playerTada.style.bottom === '') {
         playerTada.style.bottom = musicPlayer.offsetHeight - 74 + "px";
-        playerInformation.style.background = "rgba(0,0,0,1)";
-        audioListTag.style.background = "rgba(0,0,0,1)";
         audioListTag.style.height = "calc(100% - 74px)";
     } else {
         playerTada.style.bottom = '';
-        playerInformation.style.background = "rgba(0,0,0,.8)"
-        audioListTag.style.background = "rgba(0,0,0,0.8)";
         audioListTag.style.height = "0";
     }
 }
@@ -61,10 +59,11 @@ function loadAudio(order) {
     audioTag.setAttribute("src", "assets/audio/" + audioList[order].url);
     window.localStorage.setItem("order-audio", order);
     processBar.style.width = '0';
+    processBall.style.left = '0';
     loadAudioInformation(order);
 }
 
-function chooseItemAudio(order){
+function chooseItemAudio(order) {
     loadAudio(order);
     buttonListClick();
     playAudio();
