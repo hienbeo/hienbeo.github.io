@@ -12,6 +12,11 @@ function addListener() {
     buttonPlayPause.addEventListener("click", togglePlayPauseAudio, false);
     buttonNext.addEventListener("click", nextAudio, false);
     buttonPrevious.addEventListener("click", previousAudio, false);
+    audioTag.addEventListener('timeupdate', function () {
+        if (audio.ended) {
+            nextAudio();
+        }
+    })
 }
 
 function clicked() {
