@@ -4,6 +4,7 @@ let audioSinger = document.querySelector('#audio-singer');
 let buttonPlayPause = document.querySelector('.button-play-pause');
 let buttonNext = document.querySelector('.button-next');
 let buttonPrevious = document.querySelector('.button-previous');
+let processBar = document.querySelector('.process-bar');
 
 
 function addListener() {
@@ -13,6 +14,7 @@ function addListener() {
     buttonNext.addEventListener("click", nextAudio, false);
     buttonPrevious.addEventListener("click", previousAudio, false);
     audioTag.addEventListener('timeupdate', function () {
+        processBar.style.width = (audioTag.currentTime / audioTag.duration) * 100 + "%";
         if (audioTag.ended) {
             nextAudio();
         }
@@ -38,6 +40,7 @@ function restart() {
 function loadAudio(order) {
     audioTag.setAttribute("src", "assets/music/" + audioList[order].url);
     window.localStorage.setItem("order-audio", order);
+    processBar.style.width = '0';
     loadAudioInformation(order);
 }
 
