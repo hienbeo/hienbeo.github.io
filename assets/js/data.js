@@ -13,3 +13,10 @@ audioList.push({
     url: 'Neu-Mot-Ngay-Reddy.mp3',
     image: ''
 });
+
+audioList.push({
+    name: 'Quen với cô đơn',
+    singer: 'Lương Minh Trang',
+    url: 'QuenVoiCoDon-LuongMinhTrang.mp3',
+    image: ''
+});

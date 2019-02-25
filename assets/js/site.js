@@ -5,7 +5,12 @@ let buttonPlayPause = document.querySelector('.button-play-pause');
 let buttonNext = document.querySelector('.button-next');
 let buttonPrevious = document.querySelector('.button-previous');
 let processBar = document.querySelector('.process-bar');
-
+let buttonList = document.querySelector('.button-list');
+let playerInformation = document.querySelector('.player-information');
+let playerControl = document.querySelector('.player-control');
+let musicPlayer = document.querySelector('.music-player');
+let playerTada = document.querySelector('.player-tada');
+let audioListTag = document.querySelector('.audio-list');
 
 function addListener() {
     let btn = document.querySelector('#Heart_2_');
@@ -13,12 +18,27 @@ function addListener() {
     buttonPlayPause.addEventListener("click", togglePlayPauseAudio, false);
     buttonNext.addEventListener("click", nextAudio, false);
     buttonPrevious.addEventListener("click", previousAudio, false);
+    buttonList.addEventListener("click", buttonListClick, false);
     audioTag.addEventListener('timeupdate', function () {
         processBar.style.width = (audioTag.currentTime / audioTag.duration) * 100 + "%";
         if (audioTag.ended) {
             nextAudio();
         }
     })
+}
+
+function buttonListClick() {
+    if (playerTada.style.bottom === '0' || playerTada.style.bottom === '') {
+        playerTada.style.bottom = musicPlayer.offsetHeight - 74 + "px";
+        playerInformation.style.background = "rgba(0,0,0,1)";
+        audioListTag.style.background = "rgba(0,0,0,1)";
+        audioListTag.style.height = "calc(100% - 74px)";
+    } else {
+        playerTada.style.bottom = '';
+        playerInformation.style.background = "rgba(0,0,0,.8)"
+        audioListTag.style.background = "rgba(0,0,0,0.8)";
+        audioListTag.style.height = "0";
+    }
 }
 
 function clicked() {
@@ -44,9 +64,33 @@ function loadAudio(order) {
     loadAudioInformation(order);
 }
 
+function chooseItemAudio(order){
+    loadAudio(order);
+    buttonListClick();
+    playAudio();
+}
+
 function loadAudioInformation(order) {
     audioName.innerHTML = audioList[order].name;
     audioSinger.innerHTML = audioList[order].singer;
+}
+
+function loadAudioList() {
+    let length = audioList.length;
+    for (i = 0; i < length; i++) {
+        audioListTag.innerHTML += ' <div class="audio-item">' +
+            '<div style="float: left;">' +
+            '<b>' + audioList[i].name + '</b>' +
+            '<br>' +
+            '<span>' + audioList[i].singer + '</span>' +
+            '</div>' +
+            '<div style="float: right">' +
+            '<button onclick="chooseItemAudio(' + i + ')" class="button-list" style="background: none; border: none; outline: 0; font-size: 16px; line-height: 3">' +
+            '<i class="fa fa-play"></i>' +
+            '</button>' +
+            '</div>' +
+            '</div>'
+    };
 }
 
 function playAudio() {
@@ -92,5 +136,5 @@ function previousAudio() {
     }
 }
 
-
 addListener();
+loadAudioList();

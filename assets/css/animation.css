@@ -102,13 +102,23 @@
     margin: auto;
 }
 
+.player-tada {
+    position: absolute;
+    height: 74px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
 
 .player-process {
-    height: calc(100% - 70px);
     width: 100%;
     height: 4px;
-    position: absolute;
-    bottom: 70px;
+    /* position: absolute; */
     background: rgba(0, 0, 0, .4);
 }
 
@@ -126,8 +136,33 @@
     font-size: 16px;
     height: 70px;
     width: 100%;
+}
+
+.audio-list {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid;
+    width: 100%;
     bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
     left: 0;
+    height: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.audio-list .audio-item {
+    color: #fff;
+    overflow: hidden;
+    padding: 5px 15px;
+}
+
+.audio-list .audio-item:hover {
+    background: rgb(19, 19, 19);
 }
 
 @keyframes slide-media {
@@ -138,4 +173,24 @@
     100% {
         height: 100%;
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(19, 19, 19);;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
