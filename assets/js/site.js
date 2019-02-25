@@ -58,7 +58,7 @@ function restart() {
 }
 
 function loadAudio(order) {
-    audioTag.setAttribute("src", "assets/music/" + audioList[order].url);
+    audioTag.setAttribute("src", "assets/audio/" + audioList[order].url);
     window.localStorage.setItem("order-audio", order);
     processBar.style.width = '0';
     loadAudioInformation(order);
@@ -80,7 +80,7 @@ function loadAudioList() {
     for (i = 0; i < length; i++) {
         audioListTag.innerHTML += ' <div class="audio-item">' +
             '<div style="float: left;">' +
-            '<b>' + audioList[i].name + '</b>' +
+            '<b style="text-transform: uppercase">' + audioList[i].name + '</b>' +
             '<br>' +
             '<span>' + audioList[i].singer + '</span>' +
             '</div>' +

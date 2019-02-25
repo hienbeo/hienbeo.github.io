@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/RobotoCondensed/vietnamese.woff2") format("woff2");
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica/Helvetica.woff") format("woff");
 }
 
 *,
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", Fallback, sans-serif;
+  font-family: "Helvetica", Fallback, sans-serif;
   overflow: hidden;
   height: 100%;
   display: flex;
