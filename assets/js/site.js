@@ -34,8 +34,8 @@ function addListener() {
 function buttonListClick() {
   if (playerTada.style.bottom === "0" || playerTada.style.bottom === "") {
     loadAudioList();
-    playerTada.style.bottom = musicPlayer.offsetHeight - 74 + "px";
-    audioListTag.style.height = "calc(100% - 74px)";
+    playerTada.style.bottom = musicPlayer.offsetHeight - 75 + "px";
+    audioListTag.style.height = "calc(100% - 75px)";
   } else {
     playerTada.style.bottom = "";
     audioListTag.style.height = "0";

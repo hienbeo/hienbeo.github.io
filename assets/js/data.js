@@ -27,3 +27,27 @@ audioList.push({
     url: 'Co Mot Noi Nhu The.mp3',
     image: ''
 });
+
+audioList.push({
+    name: 'Vô Tình',
+    singer: 'Xesi',
+    url: 'Vô Tình - Xesi.mp3',
+    image: ''
+});
+
+audioList.push({
+    name: 'Đúng Người Đúng Thời Điểm',
+    singer: 'Thanh Hưng Freak D Remix',
+    url: 'Đúng Người Đúng Thời Điểm - Thanh Hưng Freak D Remix.mp3',
+    image: ''
+});
+
+audioList.push({
+    name: 'Gió Vẫn Hát',
+    singer: 'Long Phạm',
+    url: 'Gió Vẫn Hát - Long Phạm.mp3',
+    image: ''
+});
+
+
+

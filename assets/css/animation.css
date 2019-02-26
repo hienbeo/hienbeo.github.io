@@ -38,10 +38,10 @@
 
 .player-control {
     /* background-color: #fff; */
-    height: calc(100% - 74px);
+    height: calc(100% - 75px);
     width: 100%;
     position: absolute;
-    bottom: 74px;
+    bottom: 75px;
 }
 
 .button-audio {
@@ -115,7 +115,7 @@
 
 .player-tada {
     position: absolute;
-    height: 74px;
+    height: 75px;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -210,16 +210,15 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #5CB9FF;
-    ;
+    background: #EEFBFE;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #EEFBFE;
+    background: #5CB9FF;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #EEFBFE;
+    background: #5CB9FF;
 }
