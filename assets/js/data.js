@@ -38,7 +38,7 @@ audioList.push({
 audioList.push({
     name: 'Đúng Người Đúng Thời Điểm',
     singer: 'Thanh Hưng Freak D Remix',
-    url: 'Đúng Người Đúng Thời Điểm - Thanh Hưng Freak D Remix.mp3',
+    url: 'Dung Nguoi Dung Thoi Diem.mp3',
     image: ''
 });
 
