@@ -165,6 +165,7 @@ function nextAudio() {
     loadAudio(currentOrder + 1);
     playAudio();
   } else {
+    buttonPlayPause.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
     alert("Bạn đang ở cuối danh sách");
   }
 }
@@ -175,6 +176,7 @@ function previousAudio() {
     loadAudio(currentOrder - 1);
     playAudio();
   } else {
+    buttonPlayPause.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
     alert("Bạn đang ở đầu danh sách");
   }
 }
