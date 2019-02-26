@@ -128,14 +128,14 @@
 
 .player-process {
     width: 100%;
-    height: 4px;
+    height: 5px;
     /* position: absolute; */
     background: #FFE1F2;
 }
 
 .player-process .process-bar {
     background-color: #FD8FB3;
-    height: 4px;
+    height: 5px;
     width: 0;
 }
 
@@ -152,7 +152,7 @@
     display: flex;
     box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, .19);
     z-index: 11111;
-    margin-top: -7px;
+    margin-top: -8px;
 }
 
 .player-information {
