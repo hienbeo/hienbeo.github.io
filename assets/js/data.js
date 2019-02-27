@@ -15,6 +15,13 @@ audioList.push({
 });
 
 audioList.push({
+    name: 'Thì thôi',
+    singer: 'Reddy',
+    url: 'Thi-Thoi-Reddy.mp3',
+    image: ''
+});
+
+audioList.push({
     name: 'Quen với cô đơn',
     singer: 'Lương Minh Trang',
     url: 'QuenVoiCoDon-LuongMinhTrang.mp3',
@@ -46,6 +53,14 @@ audioList.push({
     name: 'Gió Vẫn Hát',
     singer: 'Long Phạm',
     url: 'Gió Vẫn Hát - Long Phạm.mp3',
+    image: ''
+});
+
+
+audioList.push({
+    name: 'Yêu Thương Ngày Đó',
+    singer: 'Soobin Hoàng Sơn',
+    url: 'Yêu Thương Ngày Đó - Soobin Hoàng Sơn.mp3',
     image: ''
 });
 
