@@ -1,6 +1,13 @@
 var audioList = [];
 
 audioList.push({
+    name: 'Hồng Nhan',
+    singer: 'Jack',
+    url: 'JACK - HỒNG NHAN.mp3',
+    image: ''
+});
+
+audioList.push({
     name: 'Đừng như thói quen',
     singer: 'JAYKII & SARA',
     url: 'Dung Nhu Thoi Quen.mp3',
@@ -63,6 +70,7 @@ audioList.push({
     url: 'Yêu Thương Ngày Đó - Soobin Hoàng Sơn.mp3',
     image: ''
 });
+
 
 
 
