@@ -1,4 +1,33 @@
 var audioList = [];
+//LẠC TRÔI  DESPACITO  K-ICM.mp3
+
+audioList.push({
+    name: 'LẠC TRÔI  DESPACITO',
+    singer: 'K-ICM',
+    url: 'LẠC TRÔI  DESPACITO  K-ICM.mp3',
+    image: ''
+});
+
+audioList.push({
+    name: 'Một Đêm Say',
+    singer: 'Thịnh Suy',
+    url: 'MộtĐêmSay-ThịnhSuy.mp3',
+    image: ''
+});
+
+audioList.push({
+    name: 'Thương Em Là Điều Anh Không Thể Ngờ',
+    singer: 'Noo Phước Thịnh',
+    url: 'Thương Em Là Điều Anh Không Thể Ngờ - Noo Phước Thịnh.mp3',
+    image: ''
+});
+
+audioList.push({
+    name: 'Các bản đàn tranh gây nghiện',
+    singer: 'K-ICM',
+    url: 'RADIO K-ICM  Các bản đàn tranh gây nghiện  Bản full 1 - 5.mp3',
+    image: ''
+});
 
 audioList.push({
     name: 'Hồng Nhan',
