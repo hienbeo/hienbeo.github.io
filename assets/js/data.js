@@ -1,10 +1,17 @@
 var audioList = [];
-//LẠC TRÔI  DESPACITO  K-ICM.mp3
+//Lynk Lee - Tát nước đầu đình ft. Binz (Audio).mp3
 
 audioList.push({
     name: 'LẠC TRÔI  DESPACITO',
     singer: 'K-ICM',
     url: 'LẠC TRÔI  DESPACITO  K-ICM.mp3',
+    image: ''
+});
+
+audioList.push({
+    name: 'Tát nước đầu đình',
+    singer: 'Lynk Lee ft. Binz',
+    url: 'Lynk Lee - Tát nước đầu đình ft. Binz (Audio).mp3',
     image: ''
 });
 
